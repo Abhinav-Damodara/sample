@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Author List</title>
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
                 <img src="logo.jpg" alt="logo">
             </div>
-            <div class="nav-welcome"><h1>Welcome User</h1></div>
+            <div class="nav-welcome">
+                <h1>Welcome User</h1>
+            </div>
             <div class="nav-search">
                 <input type="search" placeholder="ENTER" id="search-box">
                 <button type="submit" onclick="showResults()">SEARCH</button>
             </div>
             <div class="nav-profile">
-                <!-- Wrap profile picture inside anchor tag -->
                 <a href="profile.html">
                     <img src="profile-icon.png" alt="Profile Icon">
                 </a>
@@ -29,29 +32,21 @@
         <div class="authors-wrap">
             <ul class="filters">
                 <li>
-                    <span>Select Gender</span>
-                    <select id="select">
-                        <option id="male" value="male">Male</option>
-                        <option id="female" value="female">Female</option>
-                        <option id="all" value="all">All</option>
-                    </select>
-                </li>
-                <li>
                     <span>Country</span>
                     <fieldset>
                         <div>
                             <input type="checkbox" name="acs" value="Germany" id="ger">
                             <label for="ger">Germany</label>
-                        </div>   
+                        </div>
                         <div>
                             <input type="checkbox" name="acs" value="Turkey" id="tur">
                             <label for="tur">Turkey</label>
-                        </div>      
+                        </div>
                         <div>
                             <input type="checkbox" name="acs" value="Australia" id="aus">
                             <label for="aus">Australia</label>
                         </div>
-                    </fieldset>  
+                    </fieldset>
                 </li>
                 <li>
                     <button type="submit" onclick="filter()">Apply Filters</button>

@@ -3,29 +3,36 @@ h1 {
     margin-top: 40px;
     padding: 20px 0;
 }
+
 ul {
     padding: 0;
 }
+
 body {
     margin: 0;
 }
+
 figure {
     margin-top: 0;
 }
+
 ul,
 li {
     list-style-type: none;
 }
+
 address {
     min-height: 40px;
     margin-bottom: 20px;
     line-height: 1.4;
 }
+
 a {
     display: inline-block;
     margin-bottom: 20px;
     color: #1976d2;
 }
+
 .btn-class {
     background: #1976d2;
     color: #fff;
@@ -40,15 +47,18 @@ a {
     margin-bottom: 0;
     border: 1px solid #1976d2;
 }
+
 .added {
     color: #1976d2;
     background-color: #fff;
     max-width: 200px;
     pointer-events: none;
 }
+
 .btn-remove {
     pointer-events: initial;
 }
+
 .authors-list {
     display: flex;
     flex-direction: column;
@@ -70,51 +80,54 @@ a {
     min-height: 200px;
     text-align: center;
 }
+
 .authors-list figure {
     min-height: 72px;
 }
+
 .authors-list img {
     border-radius: 50%;
 }
+
 .authors-list li span,
 .authors-list li strong {
     display: block;
     margin-bottom: 20px;
-} 
+}
+
 .authors-wrap {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     margin: 20px 30px;
 }
+
 .filters {
     width: 300px;
     padding: 40px 20px;
     border-radius: 4px;
     background: #f4f6f7;
 }
+
 .filters li {
     margin-bottom: 20px;
 }
+
 .filters span {
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 700;
     display: block;
 }
-select {
-    width: 100%;
-    height: 32px;
-    background: #fff;
-    text-transform: capitalize;
-    font-size: 13px;
-}
+
 fieldset {
     padding: 0;
     border: 0;
 }
+
 fieldset label {
     margin-left: 10px;
 }
+
 button {
     background: #1976d2;
     color: #fff;
@@ -125,15 +138,18 @@ button {
     font-weight: 700;
     border: 0;
 }
+
 .search-wrap {
     display: flex;
     justify-content: flex-end;
     margin: 0 50px;
     background-color: #1976d2;
 }
+
 .search-wrap button {
     max-width: 100px;
 }
+
 .search-wrap input {
     font-size: 15px;
     border-radius: 4px;
@@ -142,20 +158,24 @@ button {
     margin-right: 21px;
     width: 300px;
 }
+
 nav {
     width: 100%;
     background-color: #041531;
 }
+
 .nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 110px;
 }
+
 .nav-logo {
     display: flex;
     align-items: center;
 }
+
 .nav-logo img {
     width: 100px;
     height: 100px;
@@ -171,6 +191,7 @@ nav {
     align-items: center;
     height: 100px;
 }
+
 .nav-search input {
     font-size: 20px;
     border-radius: 50px;
@@ -180,10 +201,11 @@ nav {
     height: 60px;
     margin-right: 10px;
 }
+
 .nav-search button {
     padding: 10px 10px;
     width: 120px;
-    height:60px;
+    height: 60px;
     font-size: 20px;
     border-radius: 50px;
     background-color: #fff;
@@ -191,11 +213,13 @@ nav {
     border: none;
     cursor: pointer;
 }
-.nav-welcome{
+
+.nav-welcome {
     padding-left: 20px;
     font-size: 20px;
-    color:#fff;
+    color: #fff;
 }
+
 .nav-profile {
     margin-top: 20px;
     display: flex;
