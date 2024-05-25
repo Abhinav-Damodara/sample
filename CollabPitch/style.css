@@ -110,14 +110,14 @@ a {
 
 .new-proj {
     display: flex;
-    margin-bottom:20px ;
+    margin-bottom:40px ;
     height: 50px;
     
 }
 
 .add-proj{
-    background: #1976d2;
-    color: #fff;
+    background: #19d247;
+    color: #11832e;
     text-align: left;
     padding: 10px;
     width: 100%;
