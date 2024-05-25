@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <h1>List of Authors</h1>
+            <div class="search-wrap">
+                <input type="search" placeholder="Enter email to search" / id="search-box">
+                <button type="submit" onclick="showResults()">Search</button>
+            </div>
+            <div class="authors-wrap">
+                <ul class="filters">
+                    <li>
+                        <span>Select Gender: </span>
+                        <select id="select">
+                            <option id="male" value="male">male</option>
+                            <option id="female" value="female">female</option>
+                            <option id="all" value="all">all</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span>What is Your Favorite country?</span>
+                        <fieldset>
+                            <div>
+                                <input type="checkbox" name="acs" value="Germany" id="ger"><label for="ger">Germany</label></input>  
+                            </div>   
+                            <div>
+                                <input type="checkbox" name="acs" value="Turkey" id="tur"><label for="tur">Turkey</label></input>
+                            </div>      
+                            <div>
+                                <input type="checkbox" name="acs" value="Australia" id="aus"><label for="aus">Australia</label></input>
+                            </div>
+                        </fieldset>  
+                    </li>
+                    <li>
+                        <button type="submit" onclick="filter()"> Apply Filters </button>
+                    </li>
+                </ul>
+                <ul id="authors" class="authors-list"></ul>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
