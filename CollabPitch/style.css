@@ -108,6 +108,25 @@ a {
     background: #f4f6f7;
 }
 
+.new-proj {
+    display: flex;
+    margin-bottom:20px ;
+    height: 50px;
+    
+}
+
+.add-proj{
+    background: #1976d2;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: 0;
+}
+
 .filters li {
     margin-bottom: 20px;
 }
@@ -128,7 +147,7 @@ fieldset label {
     margin-left: 10px;
 }
 
-button {
+.apply-fil {
     background: #1976d2;
     color: #fff;
     padding: 10px;
