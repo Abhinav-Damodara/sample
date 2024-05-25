@@ -1,45 +1,58 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <section>
-            <h1>Code</h1>
-            <div class="search-wrap">
-                <input type="search" placeholder="Enter email to search" / id="search-box">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Author List</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Code</h1>
+            </div>
+            <div class="nav-search">
+                <input type="search" placeholder="Enter email to search" id="search-box">
                 <button type="submit" onclick="showResults()">Search</button>
             </div>
-            <div class="authors-wrap">
-                <ul class="filters">
-                    <li>
-                        <span>Select fuck </span>
-                        <select id="select">
-                            <option id="male" value="male">man</option>
-                            <option id="female" value="female">ironman</option>
-                            <option id="all" value="all">all</option>
-                        </select>
-                    </li>
-                    <li>
-                        <span>WHat is this</span>
-                        <fieldset>
-                            <div>
-                                <input type="checkbox" name="acs" value="Germany" id="ger"><label for="ger">Germany</label></input>  
-                            </div>   
-                            <div>
-                                <input type="checkbox" name="acs" value="Turkey" id="tur"><label for="tur">Chicken</label></input>
-                            </div>      
-                            <div>
-                                <input type="checkbox" name="acs" value="Australia" id="aus"><label for="aus">Australia</label></input>
-                            </div>
-                        </fieldset>  
-                    </li>
-                    <li>
-                        <button type="submit" onclick="filter()"> Apply Filters </button>
-                    </li>
-                </ul>
-                <ul id="authors" class="authors-list"></ul>
-            </div>
-        </section>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </nav>
+    <section>
+        <div class="authors-wrap">
+            <ul class="filters">
+                <li>
+                    <span>Select Gender</span>
+                    <select id="select">
+                        <option id="male" value="male">Male</option>
+                        <option id="female" value="female">Female</option>
+                        <option id="all" value="all">All</option>
+                    </select>
+                </li>
+                <li>
+                    <span>Country</span>
+                    <fieldset>
+                        <div>
+                            <input type="checkbox" name="acs" value="Germany" id="ger">
+                            <label for="ger">Germany</label>
+                        </div>   
+                        <div>
+                            <input type="checkbox" name="acs" value="Turkey" id="tur">
+                            <label for="tur">Turkey</label>
+                        </div>      
+                        <div>
+                            <input type="checkbox" name="acs" value="Australia" id="aus">
+                            <label for="aus">Australia</label>
+                        </div>
+                    </fieldset>  
+                </li>
+                <li>
+                    <button type="submit" onclick="filter()">Apply Filters</button>
+                </li>
+            </ul>
+            <ul id="authors" class="authors-list"></ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
 </html>

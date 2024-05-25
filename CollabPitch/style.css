@@ -51,9 +51,9 @@ a {
 }
 .authors-list {
     display: flex;
-    flex-direction: column; /* Change from row to column */
-    align-items: center; /* Center align items */
-    width: 100%; /* Full width for the list */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 0;
     margin-left: 30px;
 }
@@ -65,8 +65,8 @@ a {
     border-radius: 3%;
     border: 1px solid #ccc;
     margin: .5rem;
-    width: 90%; /* Much wider width */
-    min-width: 300px; /* Ensure a minimum width */
+    width: 90%;
+    min-width: 300px;
     min-height: 200px;
     text-align: center;
 }
@@ -140,4 +140,47 @@ button {
     padding: 10px;
     margin-right: 21px;
     width: 300px;
+}
+nav {
+    width: 100%;
+    background-color: #1976d2;
+    padding: 10px 0;
+}
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo {
+    flex: 1;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+}
+.nav-logo h1 {
+    margin: 0;
+}
+.nav-search {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-search input {
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+.nav-search button {
+    padding: 10px 20px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #1976d2;
+    border: none;
+    cursor: pointer;
 }
