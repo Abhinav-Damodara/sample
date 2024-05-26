@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+        }
+        h2 {
+            text-align: center;
+            color: #1976d2;
+            margin-bottom: 20px;
+        }
+        input[type="text"], textarea, input[type="date"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #1976d2;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #145a8a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Project Registration</h2>
+    <input type="text" id="project-title" placeholder="Project Title">
+    <textarea id="project-description" placeholder="Project Description" rows="4"></textarea>
+    <input type="text" id="technologies-using" placeholder="Technologies Using">
+    <input type="text" id="requirement-skills-set" placeholder="Requirement Skills Set">
+    <input type="date" id="deadline">
+    <button onclick="postProject()">Post</button>
+</div>
+
+<script>
+    function postProject() {
+        var title = document.getElementById('project-title').value;
+        var description = document.getElementById('project-description').value;
+        var technologies = document.getElementById('technologies-using').value;
+        var skills = document.getElementById('requirement-skills-set').value;
+        var deadline = document.getElementById('deadline').value;
+
+        if (title && description && technologies && skills && deadline) {
+            alert('Project Posted Successfully');
+        } else {
+            alert('Please fill all the fields.');
+        }
+    }
+</script>
+
+</body>
+</html>
